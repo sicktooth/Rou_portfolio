@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+/* Custom scrollbar for ash color and 10px width */
+                .scrollbar-ash::-webkit-scrollbar {
+                    width: 10px;
+                    background: #e5e5e5;
+                }
+                .scrollbar-ash::-webkit-scrollbar-thumb {
+                    background: #bcbcbc;
+                    border-radius: 8px;
+                }
+                .scrollbar-ash {
+                    scrollbar-width: thin;
+                    scrollbar-color: #bcbcbc #e5e5e5;
+                }
