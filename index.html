@@ -28,12 +28,13 @@
             <section id="hero" class="mb-10 md:mb-16 mt-6 md:mt-10 p-6 md:p-12 bg-gradient-to-br from-[rgb(105,117,101)] to-[rgb(60,61,55)] rounded-3xl shadow-xl h-[60vh] md:h-[80vh]">
                 <!-- <div class="flex flex-col lg:flex-col gap-8"> -->
                     <div class="flex-1 flex flex-col justify-evenly h-full">
-                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[rgb(236,223,204)] mb-4 md:mb-6 leading-tight drop-shadow-lg">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[rgb(236,223,204)] mb-4 md:mb-6 leading-tight drop-shadow-lg animate-fade-in-up">
                             I Forge Creators Into Building Client-Ready Brands
                         </h1>
                         <div class="flex flex-col sm:flex-row gap-4 md:mt-6 w-full sm:w-auto">
                             <a href="#action_contact_socials" class="bg-[rgb(236,223,204)] text-[rgb(105,117,101)] font-bold px-6 py-3 rounded-lg shadow hover:bg-[rgb(105,117,101)] hover:text-[rgb(236,223,204)] transition-colors duration-200 text-center">Get In Touch</a>
-                            <a href="#offers_ebooks" class="bg-transparent border-2 border-[rgb(236,223,204)] text-[rgb(236,223,204)] px-6 py-3 rounded-lg font-bold hover:bg-[rgb(236,223,204)] hover:text-[rgb(105,117,101)] transition-colors duration-200 text-center">See Offers</a>
+                            <a id="see-offers-btn" href="#offers_ebooks" class="bg-transparent border-2 border-[rgb(236,223,204)] text-[rgb(236,223,204)] px-6 py-3 rounded-lg font-bold hover:bg-[rgb(236,223,204)] hover:text-[rgb(105,117,101)] transition-colors duration-200 text-center animate-[shake_0.8s_ease-in-out_infinite]">See Offers</a>
+                            
                         </div>
                     </div>
                     
@@ -44,19 +45,16 @@
                 <div class="flex-1 flex flex-col items-center mt-9">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div class="bg-[rgb(236,223,204)]/80 text-[rgb(30,32,30)] rounded-xl shadow-lg p-4 md:p-6 backdrop-blur-md">
-                                <p>
-                                    I specialize in writing self-help books for content creators/entrepreneurs to help you write your first book and add the title “Author” to your accomplishments.<br>
-                                    To launch your brand as an author, I recommend starting with discussing ideas, then writing a few paragraphs to identify your writing voice and language style.
-                                </p>
+                                <p id="about_para1" class="whitespace-pre-line"></p>
+                                <script>
+                                    
+                                </script>
                             </div>
                             <div class="flex justify-center items-center">
                                 <img class="w-24 h-24 md:w-28 md:h-28 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-[rgb(105,117,101)] shadow-lg" src="./img/JMKNc6sB_400x400.jpg" alt="">
                             </div>
                             <div class="bg-[rgb(236,223,204)]/80 text-[rgb(30,32,30)] rounded-xl shadow-lg p-4 md:p-6 backdrop-blur-md">
-                                <p>
-                                    I can handle the research, outline, and the formatting. After reading 200+ books on business and personal development.<br>
-                                    All I need is a weekly consulting session to edit and check for final approval. We can start with a chat/call to discuss your ideas and test a few pages.
-                                </p>
+                                <p id="about_para2" class="whitespace-pre-line"></p>
                             </div>
                         </div>
                     </div>
@@ -99,13 +97,16 @@
                         <p class="text-xs md:text-sm opacity-80">All thanks to her I have more than 40k a month ROI on my brand</p>
                     </figcaption>
                 </figure>
-                <div class="fixed bottom-4 right-4 flex items-center gap-2 md:gap-3 z-40">
+                <div  id="contact-cta-span" class="fixed bottom-4 right-4 flex items-center gap-1 md:gap-3 z-40">
                     <a href="#action_contact_socials" class="bg-[rgb(105,117,101)] text-[rgb(236,223,204)] rounded-full p-2 md:p-3 shadow-lg hover:bg-[rgb(60,61,55)] transition-colors duration-200 flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7m4 14l-7-7 7-7" />
                         </svg>
                     </a>
-                    <span class="text-xs md:text-base text-[rgb(236,223,204)] font-semibold bg-[rgb(30,32,30)]/70 px-2 md:px-4 py-1 md:py-2 rounded-lg shadow">Get in touch with me</span>
+                    <!-- Animated, clickable span that appears when #testimonials-2 is in view -->
+                    <a href="#action_contact_socials" class="scale-95 transition-all duration-700 ease-out text-xs md:text-base text-[rgb(236,223,204)] font-semibold bg-[rgb(30,32,30)]/70 px-2 md:px-4 py-1 md:py-2 rounded-lg shadow cursor-pointer">
+                        Get in touch with me
+                    </a>
                 </div>
             </section>
 
